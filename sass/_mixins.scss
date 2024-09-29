@@ -1,0 +1,76 @@
+@use "./variables" as *;
+
+@mixin headerButton {
+	button.header--btn {
+		position: relative;
+		margin: 1em;
+		width: 200px;
+		height: 60px;
+		background-color: transparent;
+		border: 1px solid $light-font-color;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+		p {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: block;
+			width: 200px;
+			max-width: 100%;
+			height: 60px;
+			line-height: 60px;
+			font-family: $third-font-family;
+			font-size: 2rem;
+			color: $light-font-color;
+			letter-spacing: 1px;
+			z-index: 1;
+		}
+	}
+	@media (min-width: 1200px) {
+		button.header--btn::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: $button-gradient;
+			opacity: 0;
+			transition: 0.3s;
+		}
+		button.header--btn:hover::before {
+			opacity: 1;
+		}
+		button.header--btn:hover {
+			border-color: $light-hover-color;
+		}
+		button.header--btn:hover p {
+			color: $light-hover-color;
+		}
+	}
+}
+@mixin cardButton {
+	button {
+		position: relative;
+		margin: 1.6em;
+		width: 12em;
+		height: 3.5em;
+		border: 1px solid $main-bgc;
+		border-radius: 5px;
+		font-family: $third-font-family;
+		font-size: 1.6rem;
+		color: $mid-font-color;
+		letter-spacing: 1px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	@media (min-width: 1024px) {
+		button:hover {
+			background-color: $main-bgc;
+			color: $light-font-color;
+		}
+	}
+}

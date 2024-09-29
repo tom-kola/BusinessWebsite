@@ -1,0 +1,38 @@
+@keyframes disappearing {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.disappearing {
+	animation: disappearing 1s ease 1;
+}
+@keyframes intro-slogan {
+	0% {
+		transform: translate(0, 600%);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+.intro-slogan {
+	animation: intro-slogan 0.5s ease 1 both;
+}
+@keyframes fromBottom {
+	0% {
+		opacity: 0;
+		transform: translate(0, 150%);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+.bottom-animation {
+	animation: fromBottom 0.4s ease 1 both;
+}
+.from-bottom {
+	opacity: 0;
+}

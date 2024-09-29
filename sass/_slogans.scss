@@ -1,0 +1,58 @@
+@use "./variables" as *;
+
+section.slogans {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	div.slogan {
+		display: flex;
+		flex-direction: column;
+		padding: 3em 0;
+		div.slogan__img {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		div.slogan__text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	div.slogan:nth-of-type(1),
+	div.slogan:nth-of-type(3) {
+		background: $slogan-bgc;
+	}
+}
+
+@media (min-width: 1200px) {
+	section.slogans {
+		div.slogan {
+			flex-direction: row;
+			justify-content: space-between;
+			margin: 2em 0;
+			div.slogan__img {
+				flex-basis: 48%;
+				min-height: 250px;
+				background: $slogan-bgc;
+				border-radius: 5px;
+			}
+			div.slogan__text {
+				flex-basis: 52%;
+			}
+		}
+		div.slogan:nth-of-type(1),
+		div.slogan:nth-of-type(3) {
+			flex-direction: row-reverse;
+			background: transparent;
+			div.slogan__img {
+				background: transparent;
+				border: 1px solid $main-bgc;
+			}
+		}
+	}
+}

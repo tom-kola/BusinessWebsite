@@ -1,0 +1,24 @@
+$features-gradient: linear-gradient(to right, #081328, #0c1b38 50%);
+$button-gradient: linear-gradient(
+	45deg,
+	rgba(255, 255, 255, 0.8) 0%,
+	rgba(192, 192, 192, 0.5) 25%,
+	rgba(255, 255, 255, 0.3) 50%,
+	rgba(192, 192, 192, 0.5) 75%,
+	rgba(255, 255, 255, 0.8) 100%
+);
+$light-bgc: #e9e9e9;
+$lighter-bgc: #fff;
+$main-bgc: #081328;
+$slogan-bgc: linear-gradient(to bottom, #060b11 10%, #0b1d3f 90%);
+$additional-bgc: #131315;
+$shadow-bgc: rgb(0, 0, 0, 0.4);
+$intro-title-color: linear-gradient(to right, #0d1f42 10%, #132955);
+$main-title-color: linear-gradient(to right, #ffffff, #9e9e9e 70%);
+$light-font-color: #d3d3d3;
+$mid-font-color: #363636;
+$dark-font-color: #000;
+$light-hover-color: #fff;
+$first-font-family: "Montserrat", arial, sans-serif;
+$second-font-family: "Raleway", arial, sans-serif;
+$third-font-family: "Bebas Neue", arial, sans-serif;

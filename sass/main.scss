@@ -1,0 +1,16 @@
+@use "./reset" as *;
+@use "./typography" as *;
+@use "./mixins" as *;
+@use "./variables" as *;
+@use "./animations" as *;
+@use "./intro" as *;
+@use "./header" as *;
+@use "./slogans" as *;
+@use "./media" as *;
+@use "./offert" as *;
+@use "./features" as *;
+@use "./personal" as *;
+@use "./contact" as *;
+@use "./footer" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Big+Shoulders+Display:wght@100..900&display=swap");
