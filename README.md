@@ -1,4 +1,4 @@
-# Personal Website
+# Buisness Website
 
 
 This website is designed for clients, showcasing my services and offerings. It provides a clear overview of what I can deliver to meet your needs. Here, you can find detailed information about my work and how I can assist you.
