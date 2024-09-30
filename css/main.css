@@ -360,6 +360,7 @@ header div {
   background-color: rgba(0, 0, 0, 0.4);
 }
 header div button.header--btn {
+  visibility: hidden;
   position: relative;
   margin: 1em;
   width: 200px;

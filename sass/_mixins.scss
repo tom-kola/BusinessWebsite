@@ -2,6 +2,7 @@
 
 @mixin headerButton {
 	button.header--btn {
+		visibility: hidden;
 		position: relative;
 		margin: 1em;
 		width: 200px;
